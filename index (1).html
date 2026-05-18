@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fragenkatalog Beratungsstelle</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(to bottom right, #dbeafe, #f8fafc);
+    color:#1e293b;
+}
+
+/* HEADER */
+
+.header{
+    position:relative;
+    height:420px;
+    overflow:hidden;
+}
+
+.header img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(45%);
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.35);
+}
+
+.header-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    color:white;
+    width:90%;
+}
+
+.creator{
+    position:absolute;
+    top:-120px;
+    right:0;
+    background:rgba(255,255,255,0.15);
+    padding:10px 18px;
+    border-radius:12px;
+    backdrop-filter:blur(8px);
+    font-size:14px;
+    font-weight:600;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.header-content h1{
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.header-content p{
+    font-size:20px;
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:1150px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+/* KATEGORIEN */
+
+.kategorie{
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    overflow:hidden;
+    margin-bottom:45px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+    transition:0.35s;
+}
+
+.kategorie:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 45px rgba(37,99,235,0.18);
+}
+
+.kategorie img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.kategorie-content{
+    padding:30px;
+}
+
+.kategorie h2{
+    font-size:30px;
+    margin-bottom:25px;
+    color:#2563eb;
+}
+
+/* DETAILS */
+
+details{
+    background:white;
+    margin-top:18px;
+    border-radius:16px;
+    overflow:hidden;
+    border-left:6px solid #2563eb;
+    transition:0.3s;
+}
+
+details:hover{
+    transform:translateX(4px);
+}
+
+summary{
+    padding:22px;
+    cursor:pointer;
+    list-style:none;
+    font-size:17px;
+    font-weight:600;
+    position:relative;
+}
+
+summary::-webkit-details-marker{
+    display:none;
+}
+
+summary::after{
+    content:"+";
+    position:absolute;
+    right:25px;
+    top:18px;
+    font-size:28px;
+    color:#2563eb;
+}
+
+details[open] summary::after{
+    content:"–";
+}
+
+.antwort{
+    padding:22px;
+    line-height:1.8;
+    border-top:1px solid #dbeafe;
+    background:#f8fbff;
+    color:#475569;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    padding:40px;
+    color:#64748b;
+    font-size:15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header-content h1{
+        font-size:34px;
+    }
+
+    .header-content p{
+        font-size:16px;
+    }
+
+    .kategorie h2{
+        font-size:24px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop" alt="Beratung">
+
+<div class="overlay"></div>
+
+<div class="header-content">
+
+<div class="creator">
+by Kobler & Rutzer
+</div>
+
+<h1>Fragenkatalog Beratungsstelle</h1>
+<p>Thema Geld, Budget und Schulden</p>
+
+</div>
+
+</div>
+
+<!-- CONTAINER -->
+
+<div class="container">
+
+<!-- 1 -->
+
+<div class="kategorie">
+
+<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1600&auto=format&fit=crop" alt="Beratung">
+
+<div class="kategorie-content">
+
+<h2>🏢 1. Allgemeine Fragen zur Beratungsstelle</h2>
+
+<details>
+<summary>Wie heisst Ihre Organisation und seit wann gibt es sie?</summary>
+<div class="antwort">
+Unsere Organisation ist die Zürcher Kantonalbank. Die Bank wurde im Jahr 1870 gegründet und gehört heute zu den grössten Banken der Schweiz.
+</div>
+</details>
+
+<details>
+<summary>Wer kann zu Ihnen kommen?</summary>
+<div class="antwort">
+Jugendliche, Erwachsene und Familien können zu uns kommen. Minderjährige benötigen die Zustimmung der Eltern.
+</div>
+</details>
+
+<details>
+<summary>Ist die Beratung kostenlos oder kostenpflichtig?</summary>
+<div class="antwort">
+Die Beratung rund um Konten, Debitkarten oder Kreditkarten ist kostenlos.
+</div>
+</details>
+
+<details>
+<summary>Wie läuft eine typische Beratung ab?</summary>
+<div class="antwort">
+Die Beratung findet meistens persönlich in einer Filiale statt. Dabei wird gemeinsam nach passenden Lösungen gesucht.
+</div>
+</details>
+
+<details>
+<summary>Wie lange dauert eine Beratung durchschnittlich?</summary>
+<div class="antwort">
+Eine normale Beratung dauert ungefähr 30 Minuten.
+</div>
+</details>
+
+</div>
+</div>
+
+<!-- 2 -->
+
+<div class="kategorie">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop" alt="Entwicklung">
+
+<div class="kategorie-content">
+
+<h2>📈 2. Aktuelle Entwicklung</h2>
+
+<details>
+<summary>Haben Sie in letzter Zeit mehr Menschen mit Geldproblemen?</summary>
+<div class="antwort">
+Ja, immer mehr Jugendliche und Erwachsene haben Mühe ihr Budget langfristig einzuteilen.
+</div>
+</details>
+
+<details>
+<summary>Welche Probleme kommen aktuell am häufigsten vor?</summary>
+<div class="antwort">
+Viele Menschen unterschätzen Kosten wie Krankenkassen, Steuern oder unerwartete Rechnungen.
+</div>
+</details>
+
+<details>
+<summary>Hat sich durch Inflation / steigende Preise etwas verändert?</summary>
+<div class="antwort">
+Viele Menschen geben heute schneller Geld aus und planen weniger langfristig.
+</div>
+</details>
+
+<details>
+<summary>Gibt es mehr junge Menschen mit Schulden als früher?</summary>
+<div class="antwort">
+Ja, besonders bei jungen Erwachsenen beobachten wir häufiger Schuldenprobleme.
+</div>
+</details>
+
+<details>
+<summary>Welche Rolle spielen Online-Shopping oder Buy now, pay later?</summary>
+<div class="antwort">
+Diese Angebote verleiten viele junge Menschen dazu Dinge zu kaufen, die sie sich eigentlich noch nicht leisten können.
+</div>
+</details>
+
+</div>
+</div>
+
+<!-- 3 -->
+
+<div class="kategorie">
+
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop" alt="Schulden">
+
+<div class="kategorie-content">
+
+<h2>💳 3. Ursachen von Schulden</h2>
+
+<details>
+<summary>Was sind die häufigsten Gründe für Schulden?</summary>
+<div class="antwort">
+Impulskäufe, Leasingverträge, Kredite oder unerwartete Kosten gehören zu den häufigsten Gründen.
+</div>
+</details>
+
+<details>
+<summary>Welche Fehler machen viele Menschen im Umgang mit Geld?</summary>
+<div class="antwort">
+Viele geben ihr Einkommen sofort aus anstatt regelmässig etwas zu sparen.
+</div>
+</details>
+
+<details>
+<summary>Gibt es typische Probleme bei Jugendlichen?</summary>
+<div class="antwort">
+Vor allem der Umgang mit Kreditkarten oder Online-Zahlungen ist für viele Jugendliche schwierig.
+</div>
+</details>
+
+<details>
+<summary>Wie entstehen Schulden am häufigsten?</summary>
+<div class="antwort">
+Oft entstehen Schulden durch Handy-Abos, Leasing oder Ratenzahlungen.
+</div>
+</details>
+
+</div>
+</div>
+
+<!-- 4 -->
+
+<div class="kategorie">
+
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop" alt="Budget">
+
+<div class="kategorie-content">
+
+<h2>💰 4. Budget & Umgang mit Geld</h2>
+
+<details>
+<summary>Wie erstellt man ein gutes Budget?</summary>
+<div class="antwort">
+Man erstellt zuerst eine Übersicht aller Einnahmen und Ausgaben.
+</div>
+</details>
+
+<details>
+<summary>Was sind die wichtigsten Tipps zum Sparen?</summary>
+<div class="antwort">
+Regelmässig Geld auf die Seite legen und unnötige Spontankäufe vermeiden.
+</div>
+</details>
+
+<details>
+<summary>Wie viel sollte man monatlich auf die Seite legen?</summary>
+<div class="antwort">
+Als Richtwert gelten etwa 10 bis 20 Prozent des Einkommens.
+</div>
+</details>
+
+<details>
+<summary>Welche Fixkosten sollte man besonders beachten?</summary>
+<div class="antwort">
+Miete, Krankenkasse, Versicherungen und Steuern sind besonders wichtig.
+</div>
+</details>
+
+<details>
+<summary>Gibt es einfache Regeln für Jugendliche?</summary>
+<div class="antwort">
+Jugendliche sollten früh lernen bewusst mit Geld umzugehen.
+</div>
+</details>
+
+</div>
+</div>
+
+<!-- 5 -->
+
+<div class="kategorie">
+
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1600&auto=format&fit=crop" alt="Hilfe">
+
+<div class="kategorie-content">
+
+<h2>🛠 5. Schulden – Hilfe & Lösungen</h2>
+
+<details>
+<summary>Was soll man tun, wenn man Schulden hat?</summary>
+<div class="antwort">
+Man sollte möglichst früh Hilfe suchen und offen darüber sprechen.
+</div>
+</details>
+
+<details>
+<summary>Was ist der erste Schritt bei finanziellen Problemen?</summary>
+<div class="antwort">
+Man sollte sich zuerst einen Überblick über Einnahmen und offene Rechnungen verschaffen.
+</div>
+</details>
+
+<details>
+<summary>Wie helfen Sie konkret betroffenen Personen?</summary>
+<div class="antwort">
+Wir verweisen Kundinnen und Kunden an professionelle Beratungsstellen.
+</div>
+</details>
+
+<details>
+<summary>Gibt es Möglichkeiten Schulden abzubauen?</summary>
+<div class="antwort">
+Ja, mit Budgetplanung und professioneller Unterstützung können Schulden reduziert werden.
+</div>
+</details>
+
+<details>
+<summary>Was ist ein Betreibungsverfahren?</summary>
+<div class="antwort">
+Wenn Rechnungen nicht bezahlt werden kann eine Betreibung eingeleitet werden.
+</div>
+</details>
+
+</div>
+</div>
+
+<!-- 6 -->
+
+<div class="kategorie">
+
+<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1600&auto=format&fit=crop" alt="Prävention">
+
+<div class="kategorie-content">
+
+<h2>🧠 6. Prävention</h2>
+
+<details>
+<summary>Wie kann man verhindern in Schulden zu geraten?</summary>
+<div class="antwort">
+Ein bewusster Umgang mit Geld und gute Planung der Ausgaben sind sehr wichtig.
+</div>
+</details>
+
+<details>
+<summary>Was würden Sie Jugendlichen besonders empfehlen?</summary>
+<div class="antwort">
+Vor grösseren Käufen sollte man immer nochmals darüber nachdenken.
+</div>
+</details>
+
+<details>
+<summary>Welche Rolle spielt finanzielle Bildung?</summary>
+<div class="antwort">
+Finanzielle Bildung hilft Menschen ihre Ausgaben besser zu planen.
+</div>
+</details>
+
+<details>
+<summary>Gibt es Programme oder Kurse für junge Menschen?</summary>
+<div class="antwort">
+Ja, Organisationen wie Pro Juventute bieten Kurse und Unterstützung an.
+</div>
+</details>
+
+</div>
+</div>
+
+<!-- 7 -->
+
+<div class="kategorie">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop" alt="Beruf">
+
+<div class="kategorie-content">
+
+<h2>👨‍💼 7. Arbeit der Beratenden</h2>
+
+<details>
+<summary>Was genau machen Sie in Ihrem Job?</summary>
+<div class="antwort">
+Ich betreue Privatkundinnen und Privatkunden im Bereich Vermögensaufbau und Finanzierung.
+</div>
+</details>
+
+<details>
+<summary>Mit welchen Fällen haben Sie am häufigsten zu tun?</summary>
+<div class="antwort">
+Wir betreuen häufig Kundinnen und Kunden mit grösserem Vermögen.
+</div>
+</details>
+
+<details>
+<summary>Was ist die grösste Herausforderung in Ihrer Arbeit?</summary>
+<div class="antwort">
+Man muss immer über neue wirtschaftliche Entwicklungen informiert bleiben.
+</div>
+</details>
+
+<details>
+<summary>Was gefällt Ihnen an Ihrer Arbeit?</summary>
+<div class="antwort">
+Besonders spannend ist das Vertrauen der Kundinnen und Kunden.
+</div>
+</details>
+
+<details>
+<summary>Welche Ausbildung braucht man für diesen Beruf?</summary>
+<div class="antwort">
+Meistens braucht man einen Bachelor oder Master im Finanzbereich.
+</div>
+</details>
+
+</div>
+</div>
+
+<!-- 8 -->
+
+<div class="kategorie">
+
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop" alt="Abschluss">
+
+<div class="kategorie-content">
+
+<h2>✅ 8. Abschlussfragen</h2>
+
+<details>
+<summary>Was ist Ihr wichtigster Tipp zum Thema Geld?</summary>
+<div class="antwort">
+Vor grösseren Ausgaben sollte man immer gut überlegen ob der Kauf wirklich nötig ist.
+</div>
+</details>
+
+<details>
+<summary>Was sollten Jugendliche unbedingt vermeiden?</summary>
+<div class="antwort">
+Jugendliche sollten möglichst keine unnötigen Schulden machen.
+</div>
+</details>
+
+<details>
+<summary>Haben Sie ein Beispiel aus der Praxis?</summary>
+<div class="antwort">
+Viele junge Menschen verlieren durch kleine Ratenzahlungen den Überblick über ihre Ausgaben.
+</div>
+</details>
+
+<details>
+<summary>Wo kann man Hilfe holen wenn man Probleme hat?</summary>
+<div class="antwort">
+Bei offiziellen Budget- und Schuldenberatungsstellen oder sozialen Organisationen.
+</div>
+</details>
+
+</div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+© 2026 Fragenkatalog Beratungsstelle – Thema Geld, Budget und Schulden
+</div>
+
+</body>
+</html>
